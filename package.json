@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/veereshk21/react-server-side-render#readme",
   "dependencies": {
-    "axios": "0.16.2",
+    "axios": "0.18.1",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",

@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:server":"nodemon --watch build --exec \" node build/bundle.js\"",
-    "dev:build:server": "webpack --config webpack.server.js --watch",
-    "dev:build:client": "webpack --config webpack.client.js --watch"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch build --exec \" node build/bundle.js\"",
+    "dev:build-server": "webpack --config webpack.server.js --watch",
+    "dev:build-client": "webpack --config webpack.client.js --watch"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
   },
   "homepage": "https://github.com/veereshk21/react-server-side-render#readme",
   "dependencies": {
-    "axios": "0.16.2",
+    "axios": "^0.19.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -28,11 +29,11 @@
     "babel-preset-es2017": "6.24.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
-    "compression": "1.7.0",
+    "compression": "^1.7.4",
     "concurrently": "3.5.0",
-    "express": "4.15.4",
+    "express": "^4.17.1",
     "express-http-proxy": "1.0.6",
-    "lodash": "4.17.4",
+    "lodash": "^4.17.15",
     "nodemon": "^1.19.4",
     "npm-run-all": "4.1.1",
     "react": "16.0.0",
@@ -47,7 +48,6 @@
     "webpack": "3.5.6",
     "webpack-dev-server": "2.8.2",
     "webpack-merge": "4.1.0",
-    "webpack-node-externals": "1.6.0",
-    "yarn": "^1.19.1"
+    "webpack-node-externals": "1.6.0"
   }
 }
